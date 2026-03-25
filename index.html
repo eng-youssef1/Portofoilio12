@@ -590,6 +590,17 @@ I enjoy analyzing security events, solving technical problems, and learning new 
     </a>
     <!--==================== MAIN JS ====================-->
     <script src="main.js" defer></script>
+        <script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // يمنع الفورم من إنه يعمل reload
+
+    // اظهار الرسالة
+    document.getElementById("successMsg").style.display = "block";
+
+    // تفريغ الفورم
+    this.reset();
+});
+</script>
   
 </body>
 
