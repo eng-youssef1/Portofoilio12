@@ -505,7 +505,7 @@ img {
 
 .skills__bar,
 .skills__percentage {
-  height: 5px;
+  height: 3px;
   border-radius: 0.25rem;
 }
 
@@ -516,6 +516,8 @@ img {
 .skills__percentage {
   display: block;
   background-color: var(--first-color);
+    width: 0; /* خليها 0 في البداية */
+  transition: width 1s ease-in-out; /* عشان تعمل animation لما يتغير */
 }
 
 .skills__html {
@@ -579,19 +581,30 @@ img {
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
-.skills__ccna { width: 95%; }
-.skills__investigation { width: 92%; }
-.skills__netsec { width: 88%; }
-.skills__siem { width: 97%; }
-.skills__threat { width: 85%; }
-.skills__linux { width: 95%; }
-.skills__win_sec { width: 100%; }
-.skills__sys_atk { width: 91%; }
+.skills__open .skills__list .skills__ccna { width: 95%; }
+.skills__open .skills__list .skills__investigation { width: 92%; }
+.skills__open .skills__list .skills__netsec { width: 88%; }
+.skills__open .skills__list .skills__siem { width: 97%; }
+.skills__open .skills__list .skills__threat { width: 85%; }
+.skills__open .skills__list .skills__linux { width: 95%; }
+.skills__open .skills__list .skills__win_sec { width: 100%; }
+.skills__open .skills__list .skills__sys_atk { width: 91%; }
 
-.skills__it_net { width: 100%; }
-.skills__it_diag { width: 100%; }
-.skills__it_help { width: 100%; }
-.skills__it_trouble { width: 100%; }
+.skills__open .skills__list .skills__it_net { width: 100%; }
+.skills__open .skills__list .skills__it_diag { width: 100%; }
+.skills__open .skills__list .skills__it_help { width: 100%; }
+.skills__open .skills__list .skills__it_trouble { width: 100%; }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*==================== QUALIFICATION ====================*/
