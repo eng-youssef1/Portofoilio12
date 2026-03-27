@@ -34,7 +34,7 @@ skillsHeader.forEach((el) => {
 });
 
 /*==================== SERVICES MODAL ====================*/
-/*==================== SERVICES MODAL ====================*/
+
 
 const modalViews = document.querySelectorAll(".services__modal"),
       modalBtns = document.querySelectorAll(".services__button"),
@@ -146,22 +146,3 @@ certModal.onclick = (e) => {
         certModal.style.display = "none";
     }
 };
-const skillsSection = document.querySelector("#skills");
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      
-      const bars = document.querySelectorAll(".skills__percentage");
-
-      bars.forEach(bar => {
-        const value = bar.getAttribute("data-progress");
-        bar.style.width = value + "%";
-      });
-
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.3 });
-
-observer.observe(skillsSection);
