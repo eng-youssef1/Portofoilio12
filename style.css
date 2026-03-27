@@ -579,6 +579,20 @@ img {
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
 }
+.skills__ccna { width: 95%; }
+.skills__investigation { width: 92%; }
+.skills__netsec { width: 88%; }
+.skills__siem { width: 97%; }
+.skills__threat { width: 85%; }
+.skills__linux { width: 95%; }
+.skills__win_sec { width: 100%; }
+.skills__sys_atk { width: 91%; }
+
+.skills__it_net { width: 100%; }
+.skills__it_diag { width: 100%; }
+.skills__it_help { width: 100%; }
+.skills__it_trouble { width: 100%; }
+
 
 /*==================== QUALIFICATION ====================*/
 .qualification__tabs {
