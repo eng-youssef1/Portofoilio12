@@ -517,7 +517,7 @@ img {
   display: block;
   background-color: var(--first-color);
     width: 0; /* خليها 0 في البداية */
-  transition: width 1s ease-in-out; /* عشان تعمل animation لما يتغير */
+  transition: width 3s ease-in-out; /* عشان تعمل animation لما يتغير */
 }
 
 .skills__html {
@@ -590,10 +590,10 @@ img {
 .skills__open .skills__list .skills__win_sec { width: 100%; }
 .skills__open .skills__list .skills__sys_atk { width: 91%; }
 
-.skills__open .skills__list .skills__it_net { width: 100%; }
-.skills__open .skills__list .skills__it_diag { width: 100%; }
-.skills__open .skills__list .skills__it_help { width: 100%; }
-.skills__open .skills__list .skills__it_trouble { width: 100%; }
+.skills__open .skills__list .skills__it_net { width: 95%; }
+.skills__open .skills__list .skills__it_diag { width: 94%; }
+.skills__open .skills__list .skills__it_help { width: 93%; }
+.skills__open .skills__list .skills__it_trouble { width:92%; }
 
 
 
